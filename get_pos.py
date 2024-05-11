@@ -15,7 +15,7 @@ while is_pressed("q") == False:
     if (is_pressed("t")):
         f = open("./Position.txt", "a")
         current_time = datetime.datetime.now()
-        f.write(f"x: {x}, y: {y} # {current_time} \n")
+        f.write(f"x={x}, y={y} # {current_time} \n")
         f.close()
         print("Saving position.")
     
